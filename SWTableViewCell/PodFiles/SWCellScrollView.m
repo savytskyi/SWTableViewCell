@@ -19,10 +19,11 @@
     if ([gestureRecognizer isKindOfClass:[UIPanGestureRecognizer class]]) {
         
         // Find the current scrolling velocity in that view, in the Y direction.
-        CGFloat yVelocity = [(UIPanGestureRecognizer*)gestureRecognizer velocityInView:gestureRecognizer.view].y;
+        // CGFloat yVelocity = [(UIPanGestureRecognizer*)gestureRecognizer velocityInView:gestureRecognizer.view].y;
         
         // Return YES iff the user is not actively scrolling up.
-        return fabs(yVelocity) <= 0.25;
+        // return fabs(yVelocity) <= 0.25;
+        return NO;
         
     }
     return YES;
